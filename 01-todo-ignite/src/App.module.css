@@ -1,0 +1,106 @@
+.wrapper {
+  width: 46rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: -2rem;
+  height: 3.37rem;
+  min-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  height: 100%;
+  width: 40rem;
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  margin-right: 0.5rem;
+}
+
+.form button[type=submit] {
+  height: 100%;
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  background: var(--blue-dark);
+  cursor: pointer;
+  color: var(--gray-100);
+  font-weight: bold;
+  font-size: 0.875;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: 0.2s;
+}
+
+.form button[type=submit]:not(:disabled):hover {
+  background: var(--blue);
+}
+
+.form button[type=submit]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tasksContainer {
+  margin-top: 4rem;
+}
+
+.tasksContainer header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasksContainer header div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.concludedTasks {
+  color: var(--purple);
+}
+
+.tasksContainer header span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 8px;
+}
+
+.taskList {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.taskList div {
+  margin-top: 4rem;
+  color: var(--gray-300);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskList div svg {
+  color: var(--gray-400);
+}
+
+.taskList div > span:nth-child(2) {
+  font-weight: bold;
+  margin-top: 1rem;
+}
